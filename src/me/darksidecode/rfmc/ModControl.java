@@ -283,28 +283,4 @@ public final class ModControl {
         modSpecificControllers.put(modId, controller);
     }
 
-    //
-//    private static final Map<Class<? extends ModController>, ModController> globalControllers =
-//            ImmutableMap.<Class<? extends ModController>, ModController>builder().
-//                    put(ReflectiveModController.class, new ReflectiveModController()).
-//            build();
-//
-//    private static final Map<String, ModController> modSpecificControllers =
-//            ImmutableMap.<String, ModController>builder().
-//                    // TODO add sth?
-//            build();
-//
-//    public static ModController getController(Class<? extends ModController> type) {
-//        ModController controller = globalControllers.get(type);
-//
-//        if (controller == null)
-//            throw new NoSuchElementException("no mod controller of type " + type.getName() + " is available");
-//
-//        return controller;
-//    }
-//
-//    public static ModController getModSpecificController(String modId) {
-//        return modSpecificControllers.get(modId);
-//    }
-
 }
